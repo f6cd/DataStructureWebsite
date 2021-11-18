@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>List Website</title>
+
+    <style>
+        html,
+        body {
+            background: lemonchiffon;
+            font-family: "Arial", "Helvetica", sans-serif;
+            font-size: 16px;
+
+            width: 100%;
+            height: 100%;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+
+        h1,h2,h3,h4 {
+            font-weight: 900;
+        }
+
+        #centreContainer {
+            display: flex;
+            justify-content: center;
+        }
+
+        #contentContainer {
+            max-width: 1024px;
+            background-color: white;
+            margin: 3em;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, .1);
+        }
+
+        #contentPadding {
+            padding: 3em;
+        }
+
+        .docEntry .title {
+            font-weight: 700;
+            color: darkblue;
+        }
+
+        .docEntry .description {
+            color: rgb(58, 58, 58);
+            margin-left: 10px;
+        }
+
+        .pseudoCodeContainer {
+            font-family: "Consolas", monospace;
+            padding: 16px;
+            background-color: rgb(247, 247, 247);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="centreContainer">
+        <div id="contentContainer">
+            <div id="contentPadding">
+                <h1>Lists</h1>
+                <h3>About</h3>
+                <p>
+                    A list is a data structure.
+                    <br>
+                    <br>
+                    It is similar to an array, except it is located in
+                    heap memory. This allows it to have an unfixied size, and expand at runtime. The prorgam typically
+                    doesn't index
+                    the
+                    array, or keep track of where elements are located. Instead, it uses a list object's methods to
+                    add
+                    and remove elements.
+                </p>
+                <br>
+                <h3>Methods</h3>
+                <ul>
+                    <li class="docEntry">
+                        <p class="title">
+                            List.add(item)
+                        </p>
+                        <p class="description">
+                            Appends the specified item to the end of a list.
+                        </p>
+                    </li>
+                    <li class="docEntry">
+                        <p class="title">
+                            List.add(index, item)
+                        </p>
+                        <p class="description">
+                            Inserts the specified item at the specified position index in a list.
+                        </p>
+                    </li>
+                    <li class="docEntry">
+                        <p class="title">
+                            List.clear()
+                        </p>
+                        <p class="description">
+                            Removes all of the elements from this list.
+                        </p>
+                    </li>
+                    <li class="docEntry">
+                        <p class="title">
+                            List.lastIndexOf(item)
+                        </p>
+                        <p class="description">
+                            Returns the index in this list of the last occurrence of the specified element, or -1 if the
+                            list does not contain this element.
+                        </p>
+                    </li>
+                    <li class="docEntry">
+                        <p class="title">
+                            List.remove(index)
+                        </p>
+                        <p class="description">
+                            Removes the element at the specified position in this list. Shifts any subsequent elements
+                            to the left (subtracts one from their indices).
+                        </p>
+                    </li>
+                    <li class="docEntry">
+                        <p class="title">
+                            List.get(index)
+                        </p>
+                        <p class="description">
+                            Gets the element of a specified position within the list. </p>
+                    </li>
+                    <li class="docEntry">
+                        <p class="title">
+                            List.size()
+                        </p>
+                        <p class="description">
+                            Returns the number of elements in this list i.e the size of the list.
+                    </li>
+                    <li class="docEntry">
+                        <p class="title">
+                            List.contains(item)
+                        </p>
+                        <p class="description">
+                            Returns true if this list contains the specified element.
+                    </li>
+                    <li class="docEntry">
+                        <p class="title">
+                            List.indexOf(item)
+                        </p>
+                        <p class="description">
+                            Returns the index in this list of the first occurrence of the specified element, or -1 if
+                            the list does not contain this element.
+                    </li>
+                </ul>
+                <br>
+                <h3>Usage Example</h3>
+                <div class="pseudoCodeContainer">
+                    // Pseudocode.
+                    <br>
+                    list myList
+                    <br>
+                    myList.add(4)
+                    <br>
+                    myList.add(0, 2) // [2, 4]
+                    <br>
+                    myList.remove(1) // [2]
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
